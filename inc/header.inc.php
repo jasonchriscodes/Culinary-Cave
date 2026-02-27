@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/simple.css" />
     <link rel="stylesheet" href="./styles/custom.css" />
-    <title>Culinary Cave &bull; Our mission</title>
+    <title>Culinary Cave &bull; <?php echo $pageTitle; ?></title>
 </head>
 
 <body>
     <header class="header-with-background" style="
-        background-image: url(&quot;images/pexels-engin-akyurt-1435904.jpg&quot;);
+        background-image: url('<?php echo $headerImg; ?>');
       ">
         <h1>Culinary Cave</h1>
         <p>Your sanctuary for exceptional flavors</p>
