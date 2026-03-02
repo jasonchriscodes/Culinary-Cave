@@ -28,9 +28,17 @@
         <h1>Culinary Cave</h1>
         <p>Your sanctuary for exceptional flavors</p>
         <nav>
+            <?php 
+                if (!isset($pageKey)) $pageKey ='';
+            ?>
+            <?php if ($pageKey ===  'mission'): ?> <a class=" active" href="our-mission.php">Our
+                mission</a>
+            <?php else: ?>
             <a href="our-mission.php">Our mission</a>
-            <a href="ingredients.php">Ingredients</a>
-            <a href="menu.php">Menu</a>
+            <?php endif; ?>
+            <a class="<?php if ($pageKey === 'ingredients') echo 'active' ?>" href="
+            ingredients.php">Ingredients</a>
+            <a <?php if ($pageKey ===  'menu'): ?>class=" active" <?php endif; ?> href="menu.php">Menu</a>
         </nav>
     </header>
 
